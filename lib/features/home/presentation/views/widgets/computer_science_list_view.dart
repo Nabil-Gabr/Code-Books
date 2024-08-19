@@ -1,17 +1,17 @@
 import 'package:bookly_app/core/widgets/custom_error_widget.dart';
-import 'package:bookly_app/features/home/presentation/mange/newset_books_cubit/newset_books_cubit.dart';
+import 'package:bookly_app/features/home/presentation/mange/science_books_cubit/science_books_cubit.dart';
 import 'package:bookly_app/features/home/presentation/views/widgets/book_list_view_item.dart';
 import 'package:bookly_app/features/home/presentation/views/widgets/chimmer_book_list_view_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shimmer/shimmer.dart';
 
-class BestSellerListView extends StatelessWidget {
-  const BestSellerListView({super.key});
+class ComputerScienceListView extends StatelessWidget {
+  const ComputerScienceListView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<NewsetBooksCubit,NewsetBooksState>(
+    return BlocBuilder<ScienceBooksCubit,ScienceBooksState>(
       builder: (context, state) {
         if(state is NewsetBooksSuccess){
           return Padding(
